@@ -11,12 +11,26 @@
    <div class="container">
       <div class="todo-app">
            <h1>Get Done</h1>
+          <!--.stat-container>.details>h3{keep it up!} (this is the shortcut to write the progress bar for html ---> 
+          
+          <div class="stat-container">
+            <div class="details">
+               <h3>keep it up!</h3>
+               <div id="progressbar">
+                  <div id="progress"></div>
+               </div>
+            </div>
+            <div class="stats-number">
+               <p id="numbers">0 / 0</p>
+            </div>
+          </div>
+      
            <form action="" class="input-area">
                <input type="text" id="task-input" placeholder="Add a new task...">
-               <button type="submit" id="add-task-btn"><i class="fa fa-plus" aria-hidden="true"></i>
+               <button type="button" id="add-task-btn"><i class="fa fa-plus" aria-hidden="true"></i>
                </button>
            </form>
-           <div class="todo-container">
+           <div class="todos-container">
             <ul id="task-list"></ul> 
             <img class="empty-image"  src="images/image.png" alt="empty" width="200">
           </div>
@@ -27,6 +41,8 @@
    </div>
 
    <script src="getdone.js"></script> 
+   <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+          
 </body>
 </html>
 
